@@ -1,0 +1,36 @@
+/*
+Error: Invalid CSS after "...ink Browsers *\/": expected selector or at-rule, was "}"
+        on line 29 of C:\Users\Shreyas\Google Drive\Websites Back up\Nerdywine\Style\main.scss
+
+24:     text-align: center;
+25: }
+26: 
+27: /*::selection {
+28:   background: #ffb7b7; /* WebKit/Blink Browsers *\/
+29: }
+30: ::-moz-selection {
+31:   background: #ffb7b7; /* Gecko Browsers *\/
+32: }*\/
+33: 
+34: /*=====================================================================   Header   ===================================================================================*\/
+
+Backtrace:
+C:\Users\Shreyas\Google Drive\Websites Back up\Nerdywine\Style\main.scss:29
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:43:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ink Browsers */\": expected selector or at-rule, was \"}\"\A         on line 29 of C:\Users\Shreyas\Google Drive\Websites Back up\Nerdywine\Style\main.scss\A \A 24:     text-align: center;\A 25: }\A 26: \A 27: /*::selection {\A 28:   background: #ffb7b7; /* WebKit/Blink Browsers */\A 29: }\A 30: ::-moz-selection {\A 31:   background: #ffb7b7; /* Gecko Browsers */\A 32: }*/\A 33: \A 34: /*=====================================================================   Header   ===================================================================================*/"; }

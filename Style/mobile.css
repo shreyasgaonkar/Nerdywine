@@ -1,0 +1,43 @@
+/*MEDIA QUERIES FOR MOBILES AND TABLETS*/
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1201px) {
+  .media2 {
+    display: none;
+    background-repeat: no-repeat; } }
+@media (max-width: 1200px) and (min-width: 769px) {
+  .media1 {
+    display: none;
+    background-repeat: no-repeat; }
+
+  .media2 {
+    display: normal;
+    background-repeat: no-repeat; } }
+/*XS Devices (smaller devices, 768px and below*/
+@media (max-width: 768px) {
+  .footer-element {
+    text-align: center;
+    padding: 20px 0; }
+
+  .center-on-mobile {
+    margin: 0 auto;
+    text-align: center; } }
+/*@media (max-width: 487px) {
+    .header-social {
+        display: none; //Social Icons are not displayed due to the space constraints.
+    }
+
+    .hidden-on-small-viewport {
+        display: none;
+    }
+}
+
+@media (min-width: 488px) {
+
+    .visible-on-small-viewport {
+        display: none;
+    }
+}*/
+
+/*# sourceMappingURL=mobile.css.map */
