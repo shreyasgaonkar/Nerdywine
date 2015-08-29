@@ -24,13 +24,13 @@ a {
     text-align: center;
 }
 
-/*::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
+::selection {
+    background: #ffb7b7; /* WebKit/Blink Browsers */
 }
-::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
-}*/
 
+::-moz-selection {
+    background: #ffb7b7; /* Gecko Browsers */
+}
 /*=====================================================================   Header   ===================================================================================*/
 header {
     background: #5abbc9;
@@ -46,7 +46,7 @@ header {
                 list-style-type: none;
 
                 a {
-                    color:inherit;
+                    color: inherit;
                     text-decoration: none;
                     padding: 0 15px;
                     text-transform: uppercase;
@@ -54,10 +54,10 @@ header {
                     opacity: 0.6;
                 }
 
-                a:hover{
-                    color:inherit;
+                a:hover {
+                    color: inherit;
                     text-decoration: none;
-                    opacity:1.0;
+                    opacity: 1.0;
                 }
             }
         }
@@ -66,36 +66,67 @@ header {
 
 .nav-right {
     text-align: right;
-    margin-top:15px;
-    
+    margin-top: 15px;
 }
 
-.header{
-    padding:100px 0;
+.header {
+    padding: 100px 0;
 }
 
-.header-section{
-    font-size:4vmax;
-    text-align:center;
-    border:10px solid white;
-    padding:10px 20px;
-    text-transform:uppercase;
-    color:#FFF;
+.header-section {
+    font-size: 4vmax;
+    text-align: center;
+    border: 10px solid white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #FFF;
 }
 
-.sub-section{
-    margin-top:25px;
-    color:#FFF;
-    text-transform:uppercase;
-    font-size:16px;
-    line-height:14px;
-    font-weight:500;
+.sub-section {
+    margin-top: 25px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 500;
 }
 /*=====================================================================   Section Body   ===================================================================================*/
 
-.info{
-    text-align:center;
-    padding:50px;
+.info {
+    text-align: center;
+    // padding: 50px;
+    img {
+        padding: 25px;
+    }
+
+    .icons {
+        width: 100%;
+    }
+
+    p {
+        font-family: $georgia;
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+}
+
+.skills{
+    //text-align:left;
+    font-size:16px;
+    padding:20px;
+    margin:0 auto;
+    max-width:500px;
+
+    .col-xs-12{
+        margin-top:-10px;
+        padding:10px;
+    }
+
+    .progress{
+        margin-top:10px;
+    }
 }
 
 /*=====================================================================   Footer   ===================================================================================*/
