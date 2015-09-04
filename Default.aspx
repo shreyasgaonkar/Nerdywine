@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <title>Shreyas Gaonkar</title>
+    <title>Nerdywine</title>
     <!-- <link href='//fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css' />
     <link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css' /> -->
     <meta name="keywords" content="Shreyas, Gaonkar, Website, Web, Developer, Designer, Photographer, Porfolio, Resume, CV, Online, HTML, CSS, GitHub, LinkedIn, Facebook, AngelList" />
@@ -41,9 +41,13 @@
 
     <div>
         <div class="container">
-            <section class="info">
+            <div class="info">
                 <h3>ABOUT ME</h3>
+                <%-- <img src="images/srg.png" />--%>
+
                 <img src="images/srg.png" />
+
+
                 <div class="col-12">
                     <img src="images/icon-1.png" />
                     <img src="images/icon-2.png" />
@@ -93,12 +97,107 @@
                         </div>
                         <!-- end row -->
                     </div>
-                    </div><!-- end skills -->
-            </section>
-
-
+                </div>
+                <!-- end skills -->
+            </div>
         </div>
         <!-- end container -->
+        <div class="blue">
+            <div class="container">
+
+                <h3>PROJECTS</h3>
+
+                <div class="row projects">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <img src="images/250x250.jpg" />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <img src="images/250x250.jpg" />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <img src="images/250x250.jpg" />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <img src="images/250x250.jpg" />
+                    </div>
+                </div>
+                <div class="row projects">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <img src="images/250x250.jpg" />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <img src="images/250x250.jpg" />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <img src="images/250x250.jpg" />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <img src="images/250x250.jpg" />
+                    </div>
+                </div>
+
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end Div Blue-->
+
+        <div class="white">
+            <div class="container">
+                <h3 class="center">EXPERIENCE</h3>
+
+                <div class="comment">
+                    <div class="comment-image">
+                        <img src="images/logo-3.png" alt="IUPUI" />
+                    </div>
+                    <div class="comment-content">
+                        <h1>Teaching Assistant, N115 Multi device development - IUPUI</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+                        <p class="comment-detail">Date or details about this post</p>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-image">
+                        <img src="images/logo-1.png" alt="Cognizant Technology" />
+                    </div>
+                    <div class="comment-content">
+                        <h1>Interaction Designer, Cognizant Technology Solutions</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+                        <p class="comment-detail">Date or details about this post</p>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-image">
+                        <img src="images/logo-2.png" alt="Fab.com" />
+                    </div>
+                    <div class="comment-content">
+                        <h1>UI/UX Designer, Fab.com</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+                        <p class="comment-detail">Date or details about this post</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end container -->
+        </div>
+
+        <div class="blue">
+            <div class="container">
+
+                <h3>CONTACT</h3>
+
+                <div class="contact">
+                    <form action="//formspree.io/sighalsau@gmail.com" method="POST">
+                        <input type="text" name="name" />
+                        <input type="email" name="_replyto" />
+                        <textarea name="message" placeholder="Enter your Message"></textarea>
+                        <input type="submit" value="Send" />
+                    </form>
+                </div>
+            </div>
+            <!-- end container -->
+        </div>
     </div>
 </asp:Content>
 
