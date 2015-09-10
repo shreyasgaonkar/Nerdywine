@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Nerdywine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- CSS -->
@@ -57,67 +57,96 @@
 
         <div class="page-content">
 
-            <div class="header" style="border: 1px solid red;">
+            <div class="header">
                 <div class="row center">
-                    <img src="images/srg.png" />
-
+                    <img class="img-circle" src="images/profile.jpg" />
                 </div>
-                <div class="row center">
+               <%-- <div class="row center">
 
-                    <img src="images/icon-1.png" class="header-icons"/>
-                    <img src="images/icon-1.png" class="header-icons"/>
-                    <img src="images/icon-1.png" class="header-icons"/>
-                    <img src="images/icon-1.png" class="header-icons"/>
+                    <img src="images/icon-1.png" class="header-icons" />
+                    <img src="images/icon-1.png" class="header-icons" />
+                    <img src="images/icon-1.png" class="header-icons" />
+                    <img src="images/icon-1.png" class="header-icons" />
 
 
+                </div>--%>
+
+                <p class="header-info">
+                    Graduate Teaching Assistant
+                    <br />
+                    School of Informatics and Computing<br />
+                    Indiana University Purdue University - Indianapolis
+                </p>
+                <div class="keywords">
+                    <ul>
+                        <li class="1">User
+                            Research
+                        </li>
+                        <li class="1">Usability
+                            Engineering
+                        </li>
+                    </ul>
+                    <%-- Interaction Design, Information Architecture, Prototyping, Data & Info Visualisation--%>
                 </div>
-
             </div>
-            
+
 
 
 
         </div>
+        <!-- end Pagecontent -->
 
 
         <div class="sidebar">
             <img src="images/logo.png" class="nav-icon" />
             <ul>
                 <li>
-                    <a href="#Home"  onmouseover="PlaySound('mySound')" 
-    onmouseout="StopSound('mySound')">Home</a>
+                    <a href="#Home" onmouseover="PlaySound('mySound')"
+                        onmouseout="StopSound('mySound')">Home</a>
                     <hr />
-                    <a href="#Portfolio"  onmouseover="PlaySound('mySound')" 
-    onmouseout="StopSound('mySound')">Portfolio</a>
+                    <a href="#Portfolio" onmouseover="PlaySound('mySound')"
+                        onmouseout="StopSound('mySound')">Portfolio</a>
                     <hr />
-                    <a href="#Blog"  onmouseover="PlaySound('mySound')" 
-    onmouseout="StopSound('mySound')">Blog</a>
+                    <a href="#Blog" onmouseover="PlaySound('mySound')"
+                        onmouseout="StopSound('mySound')">Blog</a>
                     <hr />
                 </li>
             </ul>
 
-            <span class="contact">CONTACT </span>
+            <div class="row" style="margin-top: 20px;">
+                <a href="#" target="_blank" title="title">
+                    <img src="icons/[1]%20linkedin.png" /></a>
+                <a href="#" target="_blank" title="title">
+                    <img src="icons/[5]%20instagram.png" /></a>
+                <a href="#" target="_blank" title="title">
+                    <img src="icons/[3]%20twitter.png" /></a>
+                <a href="#" target="_blank" title="title">
+                    <img src="icons/[2]%20quora.png" /></a>
+                <a href="#" target="_blank" title="title">
+                    <img src="icons/[4]%20behance.png" /></a>
 
-            <form action="//formspree.io/singhalsau@gmail.com" method="POST">
-                <div class="info-group">
-                    <input type="text" name="name" placeholder="Name" />
-                    <input type="email" name="_replyto" placeholder="Email" />
-                    <textarea onkeyup="auto_grow(this)" name="message" placeholder="Enter Message" maxlength="300"></textarea>
-                    <input type="submit" value="Send" />
-                </div>
-            </form>
-
-            <div class="row">
-                <img src="icons/[1]%20linkedin.png" />
-                <img src="icons/[5]%20instagram.png" />
-                <img src="icons/[3]%20twitter.png" />
-                <img src="icons/[2]%20quora.png" />
-                <img src="icons/[4]%20behance.png" />
-                
             </div>
+
+            <div id="contact" style="display: none;">
+                <span class="contact">CONTACT </span>
+
+                <form action="//formspree.io/singhalsau@gmail.com" method="POST">
+                    <div class="info-group">
+                        <input type="text" name="name" placeholder="Name" />
+                        <input type="email" name="_replyto" placeholder="Email" />
+                        <textarea onkeyup="auto_grow(this)" name="message" placeholder="Enter Message" maxlength="300"></textarea>
+                        <input type="submit" value="Send" />
+                    </div>
+                </form>
+            </div>
+
+            <%-- <div id="hideaway" style="display: none;">Here's the hidden content</div>--%>
+            <span class="contact-me">
+                <a href="javascript:;" onclick="document.getElementById('contact').style.display='block';">Contact</a>
+            </span>
 
         </div>
     </div>
-    <audio id='mySound' src='water.mp3'/>
+    <audio id='mySound' src='water.mp3' />
 </body>
 </html>

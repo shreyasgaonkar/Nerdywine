@@ -520,15 +520,31 @@ footer p {
       min-height: 10em;
       overflow: auto;
       line-height: 20px; }
+    .sidebar form input[type=submit] {
+      padding: 10px; }
     .sidebar form input[type=submit]:hover {
       background-color: #F0717C; }
     .sidebar form input, .sidebar form textarea {
+      padding: 0px 10px;
       display: block;
       margin-bottom: 20px;
       border: 2px solid #3E8DD2; }
       .sidebar form input:focus, .sidebar form input:hover, .sidebar form textarea:focus, .sidebar form textarea:hover {
         outline: none;
         border-color: #F0717C; }
+      .sidebar form input textarea, .sidebar form textarea textarea {
+        padding: 10px; }
+  .sidebar .row > a > img {
+    padding: 5px;
+    filter: gray;
+    /* IE6-9 */
+    filter: grayscale(1);
+    /* Firefox 35+ */
+    -webkit-filter: grayscale(1);
+    /* Google Chrome, Safari 6+ & Opera 15+ */ }
+    .sidebar .row > a > img:hover {
+      filter: none;
+      -webkit-filter: grayscale(0); }
   .sidebar .contact {
     margin-top: 20px;
     text-align: left;
@@ -538,6 +554,27 @@ footer p {
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: 1px; }
 
+.contact-me {
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 10px 10px 0 10px;
+  border-radius: 10px 10px 0 0; }
+  .contact-me a {
+    color: white;
+    font-size: 16px;
+    opacity: 0.7;
+    padding: 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    .contact-me a:hover {
+      color: inherit;
+      text-decoration: none;
+      opacity: 1.0; }
+    .contact-me a:focus, .contact-me a:active {
+      color: inherit;
+      text-decoration: none; }
+
 .page-content {
   position: relative;
   z-index: 0;
@@ -545,11 +582,16 @@ footer p {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  /*height:100vh;
-  margin-top:-25px;*/ }
+  background-color: #F0717C;
+  height: 100vh;
+  /*margin-top:-25px;*/ }
+
+.page-wrap {
+  background-color: #F0717C;
+  height: 100vh; }
 
 .toggle {
-  margin-left: 20px;
+  margin: 10px 0 0 20px;
   top: 50px;
   z-index: 1;
   text-decoration: none;
@@ -575,5 +617,26 @@ footer p {
 
 .header-icons {
   padding: 20px; }
+
+.header-info {
+  margin: 30px 0 0 0;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif; }
+
+.keywords {
+  text-align: center;
+  padding: 50px 0;
+  color: white;
+  font-size: 22px; }
+  .keywords ul li {
+    display: inline;
+    background-color: #AAA;
+    color: white;
+    padding: 25px;
+    margin: 0 10px;
+    border-radius: 25px; }
 
 /*# sourceMappingURL=main.css.map */
