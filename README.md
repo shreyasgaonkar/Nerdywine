@@ -1,3 +1,3 @@
-# Website code for my personal website.
+# Website code for Nerdywine
 
 Technology used: HTML, CSS, JavaScript, SASS, Refills, Bourbon & C#
