@@ -17,11 +17,17 @@
     <!-- <script src="bootstrap/js/bootstrap.js"></script> -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="Scripts/cookie.js"></script>
     <script src="Scripts/script.js"></script>
+
+    <!-- Javascript -->
+   <%-- <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/hover.js"></script>
+    <script src="Scripts/script.js"></script>--%>
+    
+    
+    <%--<script src="Scripts/hover.js"></script>--%>
     <%--<script src="Scripts/smoothscroll.min.js"></script>--%>
 
     <!-- favicon -->
@@ -45,23 +51,32 @@
     <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
 
-</head>
-<body>
 
-    <input type="checkbox" id="sidebartoggler" name="" value="" />
+  <%--  <script>
+        $(function () {
+            $.scrollify({
+                section: "section",
+            });
+        });
+    </script>--%>
+
+</head>
+<body class="home">
+
+    <input type="checkbox" id="sidebartoggler" name="" value="" checked="checked" />
 
     <div class="page-wrap">
-        <div>
+        <%-- <div>
             <label for="sidebartoggler" class="toggle">≣</label>
-        </div>
+        </div>--%>
 
         <div class="page-content">
-
-            <div class="header">
-                <div class="row center">
-                    <img class="img-circle" src="images/profile.jpg" />
-                </div>
-               <%-- <div class="row center">
+            <div id="Home">
+                <div class="header">
+                    <div class="row center">
+                        <img class="img-circle" src="images/profile.jpg" />
+                    </div>
+                    <%-- <div class="row center">
 
                     <img src="images/icon-1.png" class="header-icons" />
                     <img src="images/icon-1.png" class="header-icons" />
@@ -71,27 +86,114 @@
 
                 </div>--%>
 
-                <p class="header-info">
-                    Graduate Teaching Assistant
+                    <p class="header-info">
+                        Graduate Teaching Assistant
                     <br />
-                    School of Informatics and Computing<br />
-                    Indiana University Purdue University - Indianapolis
-                </p>
-                <div class="keywords">
-                    <ul>
-                        <li class="1">User
+                        School of Informatics and Computing<br />
+                        Indiana University Purdue University - Indianapolis
+                    </p>
+                    <div class="keywords">
+                        <ul>
+                            <li class="1">User
                             Research
-                        </li>
-                        <li class="1">Usability
+                            </li>
+                            <li class="1">Usability
                             Engineering
+                            </li>
+                        </ul>
+                        <%-- Interaction Design, Information Architecture, Prototyping, Data & Info Visualisation--%>
+                    </div>
+                    <!-- End keywords -->
+                </div>
+                <!-- end header -->
+            </div>
+            <!-- end Home -->
+
+
+
+            <section id="Portfolio" style="height: 100vh;">
+                <div class="portfolio-thumbnails">
+                    <div class="row center">
+                        <img src="images/250x250.jpg" />
+                        <img src="images/250x250.jpg" />
+                        <img src="images/250x250.jpg" />
+                        <img src="images/250x250.jpg" />
+                    </div>
+                    <div class="row center">
+                        <img src="images/250x250.jpg" />
+                        <img src="images/250x250.jpg" />
+                        <img src="images/250x250.jpg" />
+                        <img src="images/250x250.jpg" />
+                    </div>
+                </div>
+
+            </section>
+            <div id="Ux-revealed">
+                <div class="row">
+
+                    <ul>
+                        <li>
+                            <a href="#/">User Experience Promises to Keep</a>
+                        </li>
+                        <li>
+                            <a href="#/">Inspiring Women to Code :Made With Code by Google</a>
+                        </li>
+                        <li>
+                            <a href="#/">All about Accessibility in UX : Part 1</a>
+                        </li>
+                        <li>
+                            <a href="#/">All about Accessibility: Part 2</a>
+                        </li>
+                        <li>
+                            <a href="#/">More AI for developers as Expect Labs releases the MindMeld API</a>
+                        </li>
+
+
+                        <li>
+                            <a href="#/">A New Android App Called Glove Will Tell You What Carrier Is Best For You</a>
+                        </li>
+                        <li>
+                            <a href="#/">Postcard For iPhone Lets You Post To Any Social Network At Once, Even Your Own Website</a>
+                        </li>
+
+                        <li>
+                            <a href="#/">Design is All the D’s put together..!!</a>
                         </li>
                     </ul>
-                    <%-- Interaction Design, Information Architecture, Prototyping, Data & Info Visualisation--%>
+
                 </div>
+                <!-- end row -->
             </div>
+            <!-- end UX revealed -->
 
-
-
+            <div id="life-times">
+                <ul>
+                    <li>
+                        <a href="#/">Realizaton</a>
+                    </li>
+                    <li>
+                        <a href="#/">What is Passion?</a>
+                    </li>
+                    <li>
+                        <a href="#/">Intelligent Women</a>
+                    </li>
+                    <li>
+                        <a href="#/">Travel Memories</a>
+                    </li>
+                    <li>
+                        <a href="#/">Love for Food spoils society</a>
+                    </li>
+                    <li>
+                        <a href="#/">Ladies First Class</a>
+                    </li>
+                    <li>
+                        <a href="#/">GOA- Nothing Else Matters</a>
+                    </li>
+                    <li>
+                        <a href="#/">User Experience :Learning being a Housewife</a>
+                    </li>
+                </ul>
+            </div>
 
         </div>
         <!-- end Pagecontent -->
@@ -107,27 +209,30 @@
                     <a href="#Portfolio" onmouseover="PlaySound('mySound')"
                         onmouseout="StopSound('mySound')">Portfolio</a>
                     <hr />
-                    <a href="#Blog" onmouseover="PlaySound('mySound')"
-                        onmouseout="StopSound('mySound')">Blog</a>
+                    <a href="#Ux-revealed" onmouseover="PlaySound('mySound')"
+                        onmouseout="StopSound('mySound')">UX Revealed</a>
                     <hr />
+                    <a href="#life-times" onmouseover="PlaySound('mySound')"
+                        onmouseout="StopSound('mySound')">Life & Times</a>
+                    
                 </li>
             </ul>
 
             <div class="row" style="margin-top: 20px;">
                 <a href="#" target="_blank" title="title">
-                    <img src="icons/[1]%20linkedin.png" /></a>
+                    <img src="icons/[1]%20linkedin.png" style="padding: 0;" /></a>
                 <a href="#" target="_blank" title="title">
-                    <img src="icons/[5]%20instagram.png" /></a>
+                    <img src="icons/[5]%20instagram.png" style="padding: 0;" /></a>
                 <a href="#" target="_blank" title="title">
-                    <img src="icons/[3]%20twitter.png" /></a>
+                    <img src="icons/[3]%20twitter.png" style="padding: 0;" /></a>
                 <a href="#" target="_blank" title="title">
-                    <img src="icons/[2]%20quora.png" /></a>
+                    <img src="icons/[2]%20quora.png" style="padding: 0;" /></a>
                 <a href="#" target="_blank" title="title">
-                    <img src="icons/[4]%20behance.png" /></a>
+                    <img src="icons/[4]%20behance.png" style="padding: 0;" /></a>
 
             </div>
 
-            <div id="contact" style="display: none;">
+           <%-- <div id="contact" style="display: none;">
                 <span class="contact">CONTACT </span>
 
                 <form action="//formspree.io/singhalsau@gmail.com" method="POST">
@@ -138,13 +243,14 @@
                         <input type="submit" value="Send" />
                     </div>
                 </form>
-            </div>
+            </div>--%>
 
             <%-- <div id="hideaway" style="display: none;">Here's the hidden content</div>--%>
-            <span class="contact-me">
+            <%--<span class="contact-me">
                 <a href="javascript:;" onclick="document.getElementById('contact').style.display='block';">Contact</a>
-            </span>
+            </span>--%>
 
+            <span style="bottom:0;">Contact</span>
         </div>
     </div>
     <audio id='mySound' src='water.mp3' />

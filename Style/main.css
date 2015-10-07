@@ -464,7 +464,7 @@ footer p {
 
 /*============================================================== Sidebar ================================================================================================*/
 .sidebar {
-  z-index: 0;
+  z-index: 2;
   position: fixed;
   top: 0px;
   right: 0;
@@ -473,7 +473,7 @@ footer p {
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
   float: left;
   width: 250px;
-  background: #333;
+  background: rgba(51, 51, 51, 0.5);
   text-align: center;
   font-size: 24px;
   line-height: 36px;
@@ -484,6 +484,10 @@ footer p {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
+  .sidebar a img {
+    border-radius: 50px;
+    border: 2px solid white;
+    margin: 0 3px; }
   .sidebar .nav-icon {
     display: block;
     margin: 0 auto;
@@ -497,12 +501,13 @@ footer p {
       text-transform: uppercase;
       display: block;
       padding: 10px 0 10px 10px;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(145, 197, 169, 0.7);
       letter-spacing: 1px;
-      -webkit-font-smoothing: antialiased; }
+      -webkit-font-smoothing: antialiased;
+      text-align: center; }
     .sidebar ul li a:hover {
       text-decoration: none;
-      color: #F0717C;
+      color: #F98A5F;
       opacity: 0.8; }
     .sidebar ul li a:active {
       color: inherit; }
@@ -511,8 +516,8 @@ footer p {
       text-decoration: none; }
     .sidebar ul li hr {
       width: 80%;
-      opacity: 0.5;
-      margin: 0px 0; }
+      opacity: 0.3;
+      margin: 0 auto; }
   .sidebar form {
     margin: 0 auto;
     font-size: 16px; }
@@ -582,22 +587,23 @@ footer p {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  background-color: #F0717C;
-  height: 100vh;
+  background-color: #534174;
   /*margin-top:-25px;*/ }
 
 .page-wrap {
   background-color: #F0717C;
-  height: 100vh; }
+  height: 100vh;
+  z-index: 1; }
 
 .toggle {
-  margin: 10px 0 0 20px;
+  margin: 0px 0 0 20px;
   top: 50px;
-  z-index: 1;
+  z-index: 2;
   text-decoration: none;
   font-size: 30px;
   color: black;
   border: 0;
+  position: fixed;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
@@ -612,6 +618,9 @@ footer p {
     padding-left: 295px; }
 
 /*======================================================================= Main Content =======================================================================*/
+#Home {
+  height: 100vh; }
+
 .header {
   padding: 20px 40px; }
 
@@ -633,10 +642,45 @@ footer p {
   font-size: 22px; }
   .keywords ul li {
     display: inline;
-    background-color: #AAA;
-    color: white;
+    background-color: #F98A5F;
+    color: #333;
     padding: 25px;
     margin: 0 10px;
-    border-radius: 25px; }
+    border-radius: 50px; }
+
+/*======================================================================= Portfolio =======================================================================*/
+#Portfolio {
+  padding: 20px;
+  height: 100vh;
+  border: 1px solid red; }
+
+.portfolio-thumbnails {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%; }
+  .portfolio-thumbnails img {
+    padding: 10px; }
+
+/*======================================================================= Blog =======================================================================*/
+#Ux-revealed {
+  height: 100vh; }
+
+#Ux-revealed, #life-times {
+  padding: 40px 40px;
+  border: 1px solid blue; }
+  #Ux-revealed ul li, #life-times ul li {
+    padding: 10px 0; }
+    #Ux-revealed ul li a, #Ux-revealed ul li a:visited, #life-times ul li a, #life-times ul li a:visited {
+      font-family: "Verdana", "Geneva", sans-serif;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 2em; }
+    #Ux-revealed ul li a:focus, #life-times ul li a:focus {
+      text-decoration: none; }
+    #Ux-revealed ul li a:hover, #life-times ul li a:hover {
+      color: white;
+      text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
