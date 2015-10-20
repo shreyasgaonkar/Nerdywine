@@ -1,203 +1,264 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
     <title>Nerdywine</title>
-    <!-- <link href='//fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css' />
-    <link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css' /> -->
-    <meta name="keywords" content="Shreyas, Gaonkar, Website, Web, Developer, Designer, Photographer, Porfolio, Resume, CV, Online, HTML, CSS, GitHub, LinkedIn, Facebook, AngelList" />
-    <meta name="title" content="Shreyas Gaonkar" />
-    <meta name="description" content="Shreyas Gaonkar's personal portfolio website. Check more about Shreyas at shreyasg.com" />
-    <meta name="author" content="Shreyas Gaonkar" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link href="Style/style.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <!--<link href="bootstrap/css/bootstrap.css" rel="stylesheet" /> -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <script src="bootstrap/js/bootstrap.js"></script> -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="Scripts/cookie.js"></script>
+    <script src="Scripts/script.js"></script>
+
+    <!-- Javascript -->
+    <%-- <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="Scripts/script.js"></script>--%>
 
 
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <header>
-        <nav>
-            <span class="width">
-                <img src="images/logo.png" class="center-on-mobile" />
-            </span>
+    <%--<script src="Scripts/hover.js"></script>--%>
+    <%--<script src="Scripts/smoothscroll.min.js"></script>--%>
 
-            <ul class="nav-right pull-right">
-                <li><a href="#/">Home</a> </li>
-                <li><a href="#/">Blog</a> </li>
-                <li><a href="#/">About</a> </li>
-                <li><a href="#/">Portfolio</a> </li>
-                <li><a href="#/">Contact</a> </li>
-            </ul>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="manifest" href="/favicon/manifest.json" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png" />
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
 
-        </nav>
 
-        <div class="container">
-            <div class="center header">
-                <span class="header-section">Neha Singhal
-                </span>
-                <div class="sub-section">
-                    UX Strategist // Grad Student
+    <%--  <script>
+        $(function () {
+            $.scrollify({
+                section: "section",
+            });
+        });
+    </script>--%>
+</head>
+<body>
+    <div id="Home">
+
+        <div class="page-wrap">
+
+            <!-------------------------------------------------------- Major Contents ------------------------------------------------------------------>
+            <div class="page-content" style="padding-left: 300px;">
+
+                <div class="header" style="margin-top: 50px;">
+                    <div class="row center">
+                        <img class="img-circle" src="images/profile.jpg" />
+                    </div>
+
+                    <p class="header-info">
+                        Graduate Teaching Assistant
+                    <br />
+                        School of Informatics and Computing<br />
+                        Indiana University Purdue University - Indianapolis
+                    </p>
+                    <div class="keywords">
+                        <ul>
+                            <li class="1">User
+                            Research
+                            </li>
+                            <li class="1">UI</li>
+                            <li class="1">Usability
+                            Engineering
+                            </li>
+
+                            <li class="1">UX</li>
+                        </ul>
+                        <%-- Interaction Design, Information Architecture, Prototyping, Data & Info Visualisation--%>
+                    </div>
+                    <!-- End keywords -->
                 </div>
-            </div>
-        </div>
-    </header>
-
-    <div>
-        <div class="container">
-            <div class="info">
-                <h3>ABOUT ME</h3>
-                <%-- <img src="images/srg.png" />--%>
-
-                <img src="images/srg.png" />
+                <!-- end header -->
 
 
-                <div class="col-12">
-                    <img src="images/icon-1.png" />
-                    <img src="images/icon-2.png" />
-                    <img src="images/icon-1.png" />
-                    <img src="images/icon-2.png" />
-                </div>
-                <p>
-                    Office of the Vice Chancellor for Research is seeking applicants for position of <strong>Graduate Assistant</strong> who would be working as a .Net Developer. 
-                   Resumes will be accepted until the position is filled. applying should have work experience of at least <strong>one year</strong>. 
-                </p>
 
-                <div class="skills">
+
+                <section id="Portfolio" style="min-height: 100vh;">
+                    <div class="portfolio-thumbnails">
+                        <h2>My Work</h2>
+                        <div class="row center">
+                            <img src="images/250x250.jpg" />
+                            <img src="images/250x250.jpg" />
+                            <img src="images/250x250.jpg" />
+                            <img src="images/250x250.jpg" />
+                        </div>
+                        <div class="row center">
+                            <img src="images/250x250.jpg" />
+                            <img src="images/250x250.jpg" />
+                            <img src="images/250x250.jpg" />
+                            <img src="images/250x250.jpg" />
+                        </div>
+                    </div>
+
+                </section>
+                <div id="Ux-revealed">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            Communication<br />
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                    <span class="sr-only">40% Complete (success)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            UX Design
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                    <span class="sr-only">60% Complete (warning)</span>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            Programming<br />
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                    <span class="sr-only">20% Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            Visual Design
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                    <span class="sr-only">80% Complete (danger)</span>
+                         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        ...
+                                    </div>
                                 </div>
                             </div>
 
-                        </div>
-                        <!-- end row -->
+                        <ul>
+                            <li>
+                                <a href="#/">User Experience Promises to Keep</a>
+                            </li>
+                            <!-- Modal -->
+                           
+
+                            <li>
+                                <a href="#/">Inspiring Women to Code :Made With Code by Google</a>
+                            </li>
+                            <li>
+                                <a href="#/">All about Accessibility in UX : Part 1</a>
+                            </li>
+                            <li>
+                                <a href="#/">All about Accessibility: Part 2</a>
+                            </li>
+                            <li>
+                                <a href="#/">More AI for developers as Expect Labs releases the MindMeld API</a>
+                            </li>
+
+
+                            <li>
+                                <a href="#/">A New Android App Called Glove Will Tell You What Carrier Is Best For You</a>
+                            </li>
+                            <li>
+                                <a href="#/">Postcard For iPhone Lets You Post To Any Social Network At Once, Even Your Own Website</a>
+                            </li>
+
+                            <li>
+                                <a href="#/">Design is All the D’s put together..!!</a>
+                            </li>
+                        </ul>
+
                     </div>
+                    <!-- end row -->
                 </div>
-                <!-- end skills -->
-            </div>
-        </div>
-        <!-- end container -->
-        <div class="blue">
-            <div class="container">
+                <!-- end UX revealed -->
 
-                <h3>PROJECTS</h3>
-
-                <div class="row projects">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <img src="images/250x250.jpg" />
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <img src="images/250x250.jpg" />
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <img src="images/250x250.jpg" />
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <img src="images/250x250.jpg" />
-                    </div>
-                </div>
-                <div class="row projects">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <img src="images/250x250.jpg" />
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <img src="images/250x250.jpg" />
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <img src="images/250x250.jpg" />
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <img src="images/250x250.jpg" />
-                    </div>
-                </div>
-
-            </div>
-            <!-- end container -->
-        </div>
-        <!-- end Div Blue-->
-
-        <div class="white">
-            <div class="container">
-                <h3 class="center">EXPERIENCE</h3>
-
-                <div class="comment">
-                    <div class="comment-image">
-                        <img src="images/logo-3.png" alt="IUPUI" />
-                    </div>
-                    <div class="comment-content">
-                        <h1>Teaching Assistant, N115 Multi device development - IUPUI</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
-                        <p class="comment-detail">Date or details about this post</p>
-                    </div>
-                </div>
-
-                <div class="comment">
-                    <div class="comment-image">
-                        <img src="images/logo-1.png" alt="Cognizant Technology" />
-                    </div>
-                    <div class="comment-content">
-                        <h1>Interaction Designer, Cognizant Technology Solutions</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
-                        <p class="comment-detail">Date or details about this post</p>
-                    </div>
-                </div>
-
-                <div class="comment">
-                    <div class="comment-image">
-                        <img src="images/logo-2.png" alt="Fab.com" />
-                    </div>
-                    <div class="comment-content">
-                        <h1>UI/UX Designer, Fab.com</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
-                        <p class="comment-detail">Date or details about this post</p>
-                    </div>
+                <div id="life-times">
+                    <ul>
+                        <li>
+                            <a href="#/">Realizaton</a>
+                        </li>
+                        <li>
+                            <a href="#/">What is Passion?</a>
+                        </li>
+                        <li>
+                            <a href="#/">Intelligent Women</a>
+                        </li>
+                        <li>
+                            <a href="#/">Travel Memories</a>
+                        </li>
+                        <li>
+                            <a href="#/">Love for Food spoils society</a>
+                        </li>
+                        <li>
+                            <a href="#/">Ladies First Class</a>
+                        </li>
+                        <li>
+                            <a href="#/">GOA- Nothing Else Matters</a>
+                        </li>
+                        <li>
+                            <a href="#/">User Experience :Learning being a Housewife</a>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
-            <!-- end container -->
-        </div>
+            <!-- end Pagecontent -->
 
-        <div class="blue">
-            <div class="container">
+            <!-- Sidebar -->
+            <div class="sidebar" style="left: 0;">
+                <img src="images/logo.png" class="nav-icon" />
+                <ul>
+                    <li>
+                        <a href="#Home">Home</a>
+                        <hr />
+                        <a href="#Portfolio">Portfolio</a>
+                        <!--onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')-->
+                        <hr />
+                        <a href="#Ux-revealed" onmouseover="PlaySound('mySound')"
+                            onmouseout="StopSound('mySound')">UX Revealed</a>
+                        <hr />
+                        <a href="#life-times" onmouseover="PlaySound('mySound')"
+                            onmouseout="StopSound('mySound')">Life & Times</a>
 
-                <h3>CONTACT</h3>
+                    </li>
+                </ul>
 
-                <div class="contact">
-                    <form action="//formspree.io/sighalsau@gmail.com" method="POST">
-                        <input type="text" name="name" />
-                        <input type="email" name="_replyto" />
-                        <textarea name="message" placeholder="Enter your Message"></textarea>
+                <div class="row" style="margin-top: 20px;">
+                    <a href="#" target="_blank" title="title">
+                        <img src="icons/[1]%20linkedin.png" style="padding: 0;" /></a>
+                    <a href="#" target="_blank" title="title">
+                        <img src="icons/[5]%20instagram.png" style="padding: 0;" /></a>
+                    <a href="#" target="_blank" title="title">
+                        <img src="icons/[3]%20twitter.png" style="padding: 0;" /></a>
+                    <a href="#" target="_blank" title="title">
+                        <img src="icons/[2]%20quora.png" style="padding: 0;" /></a>
+                    <a href="#" target="_blank" title="title">
+                        <img src="icons/[4]%20behance.png" style="padding: 0;" /></a>
+
+                </div>
+
+                <%-- <div id="contact" style="display: none;">
+                <span class="contact">CONTACT </span>
+
+                <form action="//formspree.io/singhalsau@gmail.com" method="POST">
+                    <div class="info-group">
+                        <input type="text" name="name" placeholder="Name" />
+                        <input type="email" name="_replyto" placeholder="Email" />
+                        <textarea onkeyup="auto_grow(this)" name="message" placeholder="Enter Message" maxlength="300"></textarea>
                         <input type="submit" value="Send" />
-                    </form>
-                </div>
-            </div>
-            <!-- end container -->
-        </div>
-    </div>
-</asp:Content>
+                    </div>
+                </form>
+            </div>--%>
 
+                <%-- <div id="hideaway" style="display: none;">Here's the hidden content</div>--%>
+                <%--<span class="contact-me">
+                <a href="javascript:;" onclick="document.getElementById('contact').style.display='block';">Contact</a>
+            </span>--%>
+
+                <div style="bottom: -10px;">Contact</div>
+            </div>
+            <!-- end Sidebar -->
+
+
+
+        </div>
+        <!-- end page-warp -->
+    </div>
+    <!-- end Home -->
+</body>
+</html>

@@ -18,15 +18,16 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="Scripts/cookie.js"></script>
-    <script src="Scripts/script.js"></script>
+    <%--<script src="Scripts/cookie.js"></script>
+    <script src="Scripts/script.js"></script>--%>
+    <script src="Scripts/navbar.js"></script>
 
     <!-- Javascript -->
-   <%-- <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <%-- <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="Scripts/script.js"></script>--%>
-    
-    
+
+
     <%--<script src="Scripts/hover.js"></script>--%>
     <%--<script src="Scripts/smoothscroll.min.js"></script>--%>
 
@@ -52,207 +53,155 @@
     <meta name="theme-color" content="#ffffff" />
 
 
-  <%--  <script>
+    <%--  <script>
         $(function () {
             $.scrollify({
                 section: "section",
             });
         });
     </script>--%>
-
 </head>
 <body class="home">
 
-    <input type="checkbox" id="sidebartoggler" name="" value="" checked="checked" />
-
-    <div class="page-wrap">
-        <%-- <div>
-            <label for="sidebartoggler" class="toggle">≣</label>
-        </div>--%>
-
-        <div class="page-content">
-            <div id="Home">
-                <div class="header">
-                    <div class="row center">
-                        <img class="img-circle" src="images/profile.jpg" />
-                    </div>
-                    <%-- <div class="row center">
-
-                    <img src="images/icon-1.png" class="header-icons" />
-                    <img src="images/icon-1.png" class="header-icons" />
-                    <img src="images/icon-1.png" class="header-icons" />
-                    <img src="images/icon-1.png" class="header-icons" />
-
-
-                </div>--%>
-
-                    <p class="header-info">
-                        Graduate Teaching Assistant
-                    <br />
-                        School of Informatics and Computing<br />
-                        Indiana University Purdue University - Indianapolis
-                    </p>
-                    <div class="keywords">
-                        <ul>
-                            <li class="1">User
-                            Research
+    <!-- Navbar -->
+    <header class="centered-navigation" role="banner">
+        <div class="centered-navigation-wrapper">
+            <a href="javascript:void(0)" class="mobile-logo">
+                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image" />
+            </a>
+            <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu" style="font-weight: bolder; font-size: 20px;">≣</a>
+            <nav role="navigation" style="padding:0;">
+                <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+                    <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
+                    <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+                    <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+                    <li class="nav-link logo">
+                        <a href="javascript:void(0)" class="logo">
+                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image" />
+                        </a>
+                    </li>
+                    <li class="nav-link"><a href="javascript:void(0)">Testimonials</a></li>
+                    <li class="nav-link more"><a href="javascript:void(0)">More</a>
+                        <ul class="submenu">
+                            <li><a href="javascript:void(0)">Submenu Item</a></li>
+                            <li><a href="javascript:void(0)">Another Item</a></li>
+                            <li class="more"><a href="javascript:void(0)">Item with submenu</a>
+                                <ul class="submenu">
+                                    <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
+                                    <li><a href="javascript:void(0)">Another Item</a></li>
+                                </ul>
                             </li>
-                            <li class="1">Usability
-                            Engineering
+                            <li class="more"><a href="javascript:void(0)">Another submenu</a>
+                                <ul class="submenu">
+                                    <li><a href="javascript:void(0)">Sub-submenu</a></li>
+                                    <li><a href="javascript:void(0)">An Item</a></li>
+                                </ul>
                             </li>
                         </ul>
-                        <%-- Interaction Design, Information Architecture, Prototyping, Data & Info Visualisation--%>
-                    </div>
-                    <!-- End keywords -->
-                </div>
-                <!-- end header -->
-            </div>
-            <!-- end Home -->
-
-
-
-            <section id="Portfolio" style="height: 100vh;">
-                <div class="portfolio-thumbnails">
-                    <div class="row center">
-                        <img src="images/250x250.jpg" />
-                        <img src="images/250x250.jpg" />
-                        <img src="images/250x250.jpg" />
-                        <img src="images/250x250.jpg" />
-                    </div>
-                    <div class="row center">
-                        <img src="images/250x250.jpg" />
-                        <img src="images/250x250.jpg" />
-                        <img src="images/250x250.jpg" />
-                        <img src="images/250x250.jpg" />
-                    </div>
-                </div>
-
-            </section>
-            <div id="Ux-revealed">
-                <div class="row">
-
-                    <ul>
-                        <li>
-                            <a href="#/">User Experience Promises to Keep</a>
-                        </li>
-                        <li>
-                            <a href="#/">Inspiring Women to Code :Made With Code by Google</a>
-                        </li>
-                        <li>
-                            <a href="#/">All about Accessibility in UX : Part 1</a>
-                        </li>
-                        <li>
-                            <a href="#/">All about Accessibility: Part 2</a>
-                        </li>
-                        <li>
-                            <a href="#/">More AI for developers as Expect Labs releases the MindMeld API</a>
-                        </li>
-
-
-                        <li>
-                            <a href="#/">A New Android App Called Glove Will Tell You What Carrier Is Best For You</a>
-                        </li>
-                        <li>
-                            <a href="#/">Postcard For iPhone Lets You Post To Any Social Network At Once, Even Your Own Website</a>
-                        </li>
-
-                        <li>
-                            <a href="#/">Design is All the D’s put together..!!</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end UX revealed -->
-
-            <div id="life-times">
-                <ul>
-                    <li>
-                        <a href="#/">Realizaton</a>
                     </li>
-                    <li>
-                        <a href="#/">What is Passion?</a>
-                    </li>
-                    <li>
-                        <a href="#/">Intelligent Women</a>
-                    </li>
-                    <li>
-                        <a href="#/">Travel Memories</a>
-                    </li>
-                    <li>
-                        <a href="#/">Love for Food spoils society</a>
-                    </li>
-                    <li>
-                        <a href="#/">Ladies First Class</a>
-                    </li>
-                    <li>
-                        <a href="#/">GOA- Nothing Else Matters</a>
-                    </li>
-                    <li>
-                        <a href="#/">User Experience :Learning being a Housewife</a>
-                    </li>
+                    <li class="nav-link"><a href="javascript:void(0)">Sign up</a></li>
                 </ul>
-            </div>
-
+            </nav>
         </div>
-        <!-- end Pagecontent -->
+    </header>
+    <!-- Navbar -->
 
 
-        <div class="sidebar">
-            <img src="images/logo.png" class="nav-icon" />
-            <ul>
-                <li>
-                    <a href="#Home" onmouseover="PlaySound('mySound')"
-                        onmouseout="StopSound('mySound')">Home</a>
-                    <hr />
-                    <a href="#Portfolio" onmouseover="PlaySound('mySound')"
-                        onmouseout="StopSound('mySound')">Portfolio</a>
-                    <hr />
-                    <a href="#Ux-revealed" onmouseover="PlaySound('mySound')"
-                        onmouseout="StopSound('mySound')">UX Revealed</a>
-                    <hr />
-                    <a href="#life-times" onmouseover="PlaySound('mySound')"
-                        onmouseout="StopSound('mySound')">Life & Times</a>
-                    
-                </li>
-            </ul>
 
-            <div class="row" style="margin-top: 20px;">
-                <a href="#" target="_blank" title="title">
-                    <img src="icons/[1]%20linkedin.png" style="padding: 0;" /></a>
-                <a href="#" target="_blank" title="title">
-                    <img src="icons/[5]%20instagram.png" style="padding: 0;" /></a>
-                <a href="#" target="_blank" title="title">
-                    <img src="icons/[3]%20twitter.png" style="padding: 0;" /></a>
-                <a href="#" target="_blank" title="title">
-                    <img src="icons/[2]%20quora.png" style="padding: 0;" /></a>
-                <a href="#" target="_blank" title="title">
-                    <img src="icons/[4]%20behance.png" style="padding: 0;" /></a>
+    <!-- Header -->
 
+    <div class="hero">
+        <div class="hero-inner">
+            <a href="" class="hero-logo">
+                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image" /></a>
+            <div class="hero-copy">
+                <h1>Short description of Product</h1>
+                <p>A few reasons why this product is worth using, who it's for and why they need it.</p>
             </div>
-
-           <%-- <div id="contact" style="display: none;">
-                <span class="contact">CONTACT </span>
-
-                <form action="//formspree.io/singhalsau@gmail.com" method="POST">
-                    <div class="info-group">
-                        <input type="text" name="name" placeholder="Name" />
-                        <input type="email" name="_replyto" placeholder="Email" />
-                        <textarea onkeyup="auto_grow(this)" name="message" placeholder="Enter Message" maxlength="300"></textarea>
-                        <input type="submit" value="Send" />
-                    </div>
-                </form>
-            </div>--%>
-
-            <%-- <div id="hideaway" style="display: none;">Here's the hidden content</div>--%>
-            <%--<span class="contact-me">
-                <a href="javascript:;" onclick="document.getElementById('contact').style.display='block';">Contact</a>
-            </span>--%>
-
-            <span style="bottom:0;">Contact</span>
         </div>
     </div>
-    <audio id='mySound' src='water.mp3' />
+
+    <div class="container">
+        <!-- Bullets -->
+        <ul class="bullets" style="margin: 50px 0 0 0;">
+            <li class="bullet">
+                <div class="bullet-icon bullet-icon-1">
+                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png
+"
+                        alt="">
+                </div>
+                <div class="bullet-content">
+                    <h2>This Bullet Title</h2>
+                    <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+                </div>
+            </li>
+            <li class="bullet">
+                <div class="bullet-icon bullet-icon-2">
+                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
+                </div>
+                <div class="bullet-content">
+                    <h2>Another Bullet Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+                </div>
+            </li>
+            <li class="bullet">
+                <div class="bullet-icon bullet-icon-3">
+                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_4.png" alt="">
+                </div>
+                <div class="bullet-content">
+                    <h2>Last Bullet Title</h2>
+                    <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+                </div>
+            </li>
+        </ul>
+
+        <hr />
+        <h2>PROJECTS</h2>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                </div>
+                <div class="card-header">
+                    First Card
+   
+                </div>
+                <div class="card-copy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-4.png" alt="">
+                </div>
+                <div class="card-header">
+                    Another Card
+   
+                </div>
+                <div class="card-copy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png" alt="">
+                </div>
+                <div class="card-header">
+                    The Last Card
+   
+                </div>
+                <div class="card-copy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- end container -->
 </body>
 </html>

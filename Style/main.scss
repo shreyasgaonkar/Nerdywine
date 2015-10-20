@@ -3,6 +3,9 @@
 @import "../base/_base";
 @import "mobile";
 @import "experience";
+@import "navbar";
+@import "header";
+@import "Bullets";
 
 //@import "../Style/top-nav";
 /*@import "hero";
@@ -57,6 +60,7 @@ a {
 header {
     background-color: #5abbc9;
 
+
     nav {
         padding: 20px 40px;
         font-size: 14px;
@@ -93,6 +97,7 @@ header {
 
 .header {
     padding: 100px 0;
+    min-height:100vh;
 }
 
 .header-section {
@@ -257,6 +262,7 @@ footer {
 /*============================================================== Sidebar ================================================================================================*/
 
 .sidebar {
+    
     z-index: 2;
     @include position(fixed, 0px 0 0px -270px);
     font-family: $georgia;
@@ -521,7 +527,7 @@ footer {
     }
 }
 
-/*======================================================================= Portfolio =======================================================================*/
+/*======================================================================= `folio =======================================================================*/
 
 #Portfolio {
     padding: 20px;
@@ -537,8 +543,14 @@ footer {
     align-items: center;
     margin-top: 10%;
     //text-align: center;
+
     img {
         padding: 10px;
+    }
+
+    h2{
+        color:white;
+        font-size:8em;
     }
 }
 
