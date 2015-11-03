@@ -24,6 +24,8 @@ html {
     font-size: 16px;
 }
 
+
+
 html, body {
     margin: 0;
     background: #F5F5F5;
@@ -171,26 +173,62 @@ a {
     p {
         font-size: 14px;
         line-height: 20px;
-        text-align:left;
+        text-align: left;
     }
 
-    .skills{
-        margin-top:50px;
-        line-height:36px;
-        font-size:14px;
+    .skills {
+        margin-top: 50px;
+        line-height: 36px;
+        font-size: 14px;
 
-        hr{
-            width:80%;
-            margin:0 auto 20px auto;
+        hr {
+            width: 80%;
+            margin: 0 auto 20px auto;
             border-top: 1px dotted #FFF;
         }
 
-        h4{
-            font-size:22px;
+        h4 {
+            font-size: 22px;
+        }
+
+        h5 {
+            padding: 10px 0;
         }
     }
 }
 
-#portfolio{
-    height:1000px;
+#portfolio {
+    min-height: 100vh;
+    color: black;
+}
+
+.portfolio-header {
+    padding: 40px 0;
+}
+
+.portfolio-thumbnail {
+    //border:5px solid white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight {
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/**JQUERy*/
+.banner {
+    position: relative;
+    overflow: auto;
+}
+
+.banner li {
+    list-style: none;
+}
+
+.banner ul li {
+    float: left;
 }

@@ -157,17 +157,6 @@ body {
   font-size: 1em;
   line-height: 1.5; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
-  line-height: 1.2;
-  margin: 0 0 0.75em; }
-
 p {
   margin: 0 0 0.75em; }
 
@@ -445,17 +434,6 @@ body {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1em;
   line-height: 1.5; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
-  line-height: 1.2;
-  margin: 0 0 0.75em; }
 
 p {
   margin: 0 0 0.75em; }
@@ -814,17 +792,6 @@ body {
   font-size: 1em;
   line-height: 1.5; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
-  line-height: 1.2;
-  margin: 0 0 0.75em; }
-
 p {
   margin: 0 0 0.75em; }
 
@@ -1052,17 +1019,6 @@ body {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1em;
   line-height: 1.5; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
-  line-height: 1.2;
-  margin: 0 0 0.75em; }
 
 p {
   margin: 0 0 0.75em; }
@@ -1375,8 +1331,34 @@ a {
       border-top: 1px dotted #FFF; }
     .menu .skills h4 {
       font-size: 22px; }
+    .menu .skills h5 {
+      padding: 10px 0; }
 
 #portfolio {
-  height: 1000px; }
+  min-height: 100vh;
+  color: black; }
+
+.portfolio-header {
+  padding: 40px 0; }
+
+.portfolio-thumbnail {
+  padding: 60px 0;
+  text-align: center; }
+
+#one, #two, #three, #four, #five, #six, #seven, #eight {
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 100px; }
+
+/**JQUERy*/
+.banner {
+  position: relative;
+  overflow: auto; }
+
+.banner li {
+  list-style: none; }
+
+.banner ul li {
+  float: left; }
 
 /*# sourceMappingURL=main.css.map */
